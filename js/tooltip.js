@@ -32,7 +32,8 @@
 
         // Create tooltip
         var newTooltip = $('<div></div>');
-        newTooltip.addClass('material-tooltip').append(tooltip_text)
+        newTooltip.addClass('material-tooltip ' + origin.attr('data-tooltip-class'))
+          .append(tooltip_text)
           .appendTo($('body'))
           .attr('id', tooltipId);
 
